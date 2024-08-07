@@ -1,31 +1,51 @@
 {% extends 'app/base.html' %}
 {% load static %}
 {% block title %}About{% endblock title %}
+{% block banner_slider %}
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'app/images/banner/banner/b1.jpg' %}" class="d-block w-100" alt="banner">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'app/images/banner/banner/b2.jpg' %}" class="d-block w-100" alt="banner">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'app/images/banner/banner/b3.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'app/images/banner/banner/b4.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+{% endblock banner_slider %}
 {% block main-content %}
     <div class="container mt-3">
         <br>
-        <h2 class="text-center" style="font-family:Chilanka">About Us</h2>
+        <h2 class="text-center " style="font-family:cursive" >About Us</h2>
         <br>
         <div class="row container">
-            <p class="fs-4 text-center" style="font-family: cursive">Brookside Dairy Limited, often referred to as Brookside Dairies, is a dairy processing company in Kenya, the largest economy in the East African Community. The company offers fresh pasteurized milk, cream, butter, yogurt, ghee, and long life milk products
+            <p class="fs-4 text-center" style="font-family: Serif">Brookside Dairy Limited, often referred to as Brookside Dairies, is a dairy processing company in Kenya, the largest economy in the East African Community. The company offers fresh pasteurized milk, cream, butter, yogurt, ghee, and long life milk products
             in Indian Ocean Islands, East Africa, Rwanda and Burundi.It is one of the best Dairy Company.</p>
         </div>
 
         <br><br>
-        <h2 class="text-center" style="font-family: Chilanka">Mission</h2>
+        <h2 class="text-center" style="font-family: cursive">Mission</h2>
         <br>
         <div class="row container">
-            <p class="fs-4 text-center" style="font-family: cursive">To bring wholesome goodness of pure farm fresh dairy products
+            <p class="fs-4 text-center" style="font-family: Serif">To bring wholesome goodness of pure farm fresh dairy products
             to every Kenyan home.</p>
         </div>
 
         <br><br>
-        <h2 class="text-center" style="font-family: Chilanka">Vision</h2>
+        <h2 class="text-center" style="font-family: cursive">Vision</h2>
         <br>
         <div class="row container">
-            <p class="fs-4 text-center" style="font-family: cursive">To refresh the world of milk in Kenya with
+            <p class="fs-4 text-center" style="font-family: Serif">To refresh the world of milk in Kenya with
             a new appreciation for pure healthy delicious milk from farm to table</p>
         </div>
 
     </div>
+
+    <br><br>
 {% endblock main-content %}
